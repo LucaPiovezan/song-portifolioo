@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <link rel="shortcut icon" href="gato.png">
+  <meta charset="UTF-8">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio - Luca Piovezan</title>
+  <link rel="stylesheet" href="style.css"> 
+</head>
+<div class="audio-hint" id="audioHint">
+  <i>🎧</i>
+  <span>Use fones de ouvido para melhor experiência</span>
+  <button id="closeHint">×</button>
+</div>
+
+<body>
+  <nav id="cabeca">
+    <a href="#sobremim">Sobre mim</a>
+    <a href="#habilidades">Habilidades</a>
+    <a href="#projetos">Projetos</a>
+    <a href="#contato">Contato</a>
+    <a class="sorriso">😎</a>
+    <button id="toggle-mode">🌙 Modo Escuro</button>
+  </nav>
+
+  <section class="hero">
+    <div id="img1"></div>
+    <div class="hero-text">
+      <h1 class="olaeusouluca">Olá! Eu sou o<br>Luca Piovezan.</h1>
+      <p id="tipo-texto"></p>
+    </div>
+    <div class="music-controls">
+      <button id="next-track">⏩</button>
+      <button id="play-pause">⏸️</button> <!-- novo botão -->
+      <button id="prev-track">⏪</button>
+    </div>
+  </section>
+  
+  <a href="#sobremim">
+    <div class="scroll-down">▾</div>
+  </a>
+
+  <div class="sobremim-container">
+    <div class="sobremim" id="sobremim">
+      <img src="eu.png" class="fotoeu">
+      <div>
+        <h1 class="sobremim1">Sobre mim</h1>
+        <p class="textosobremim">Meu nome é Luca Piovezan Figueredo, tenho 16 anos e atualmente curso o Ensino Médio
+          integrado a um curso técnico, no qual adquiri conhecimentos até a metade do 2º ano. Durante 7 meses tive a
+          oportunidade de trabalhar com ferramentas digitais, o que me ajudou a desenvolver organização, responsabilidade e
+          experiência no ambiente de trabalho.
+          Além dos estudos e do trabalho, gosto de editar vídeos e explorar minha criatividade na produção de conteúdos
+          visuais. Acredito que aprender coisas diferentes e colocar em prática no dia a dia é o que me ajuda a evoluir
+          tanto pessoal quanto profissionalmente.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="habilidades-section">
+    <h1 class="habilidades" id="habilidades">Habilidades</h1>
+    <hr class="linha">
+    <div class="habilidades-grid">
+      
+        <img src="c.png" class="c" alt="Logo C#">
+      
+     
+        <img src="davinci.png" class="davinci" alt="DaVinci Resolve logo">
+     
+      
+        <img src="excel.png" class="excel" alt="Excel logo">
+      
+    </div>
+    
+<div id="modal-c" class="modal">
+  <div class="modal-content">
+    <span class="close" data-close="modal-c">&times;</span>
+    <h2>C#</h2>
+    <p>Linguagem de programação usada para criar aplicações desktop, jogos (com Unity) e sistemas. Aprendi a criar formulários, calcular dados e desenvolver programas lógicos.</p>
+  </div>
+</div>
+
+
+<div id="modal-davinci" class="modal">
+  <div class="modal-content">
+    <span class="close" data-close="modal-davinci">&times;</span>
+    <h2>DaVinci Resolve</h2>
+    <p>Software profissional de edição de vídeo. Tenho experiência em cortes, correção de cores e montagem de vídeos criativos e profissionais.</p>
+  </div>
+</div>
+
+
+<div id="modal-excel" class="modal">
+  <div class="modal-content">
+    <span class="close" data-close="modal-excel">&times;</span>
+    <h2>Excel</h2>
+    <p>Ferramenta essencial para organização de dados e cálculos automáticos. Sei usar fórmulas, gráficos e planilhas automatizadas.</p>
+  </div>
+</div>
+    <hr class="linha">
+  </div>
+
+  <div class="redes-section" id="redes">
+    <h1 class="titulominhasredes">Minhas Redes</h1>
+    <div class="redes-content">
+      <img src="gatocomflor.png" class="gatocomflor">
+      <div class="redes-links">
+        <a href="https://github.com/LucaPiovezan" target="_blank" class="rede-item">
+          <img src="github.png" alt="GitHub">
+          <p><b>GitHub</b></p>
+        </a>
+        <a href="mailto:lucapiovezan4@gmail.com" class="rede-item">
+          <img src="gmail.png" alt="Gmail">
+          <p><b>Gmail</b></p>
+        </a>
+        <a href="https://www.instagram.com/lucapiovezn/" target="_blank" class="rede-item">
+          <img src="instagram.png" alt="Instagram">
+          <p><b>Instagram</b></p>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="projetos-section" id="projetos">
+    <h1 class="titulo-projetos">Projetos</h1>
+    <div class="projetos-grid">
+      <div class="projeto-item">
+  <a href="https://lucapiovezan.github.io/Belara/" target="_blank">
+    <img src="belara.png" alt="Projeto Belara">
+  </a>
+</div>
+
+    <div class="projeto-item">
+      <a href="https://lucapiovezan.github.io/HardPro-html/" target="_blank">
+        <img src="hardpro.png" alt="Projeto HardPro">
+      </a>
+    </div>
+
+    <div class="projeto-item">
+      <a href="https://lucapiovezan.github.io/MoradaIdeal/" target="_blank">
+        <img src="moradaideal.png" alt="Projeto Morada Ideal">
+      </a>
+    </div>
+
+    </div>
+  </div>
+<section id="contato" class="contato">
+  <h2>Contato</h2>
+  <p>Entre em contato preenchendo o formulário abaixo:</p>
+
+ <form action="https://formspree.io/f/xkgpbwdp" method="POST" class="form-contato">
+  <label for="nome">Nome:</label>
+  <input type="text" id="nome" name="name" required>
+
+  <label for="telefone">Telefone:</label>
+  <input type="tel" id="telefone" name="telefone" required>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="mensagem">Mensagem:</label>
+  <textarea id="mensagem" name="message" rows="4" required></textarea>
+
+  <button type="submit">Enviar</button>
+</form>
+<button id="btnTopo" title="Voltar ao topo">↑</button>
+  
+  <script src="script.js"></script>
+  <footer class="footer">Luca Piovezan Figueredo // 2025</footer>
+</body>
+</html>
