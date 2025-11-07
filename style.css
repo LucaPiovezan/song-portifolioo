@@ -1,0 +1,846 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  :root
+  {
+    --img:url(gato.png)
+    
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #4b82c3;
+    color: #fff;
+    transition: background-color 0.5s ease, color 0.5s ease;
+  }
+
+ 
+  nav {
+    background-color: #4b82c3;
+   
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+  }
+
+  nav a {
+    font-size: 22px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    transition: 0.3s;
+  }
+
+  nav a:hover {
+    color: #fff;
+  }
+
+  
+
+  #toggle-mode {
+    font-size: 16px;
+    background: none;
+    border: 2px solid #fff;
+    padding: 8px 15px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  #toggle-mode:hover {
+    background: #fff;
+    color: #4b82c3;
+  }
+
+  
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .hero img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+  }
+
+  .hero-text h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .hero-text p {
+    font-size: 1.5rem;
+    color: black;
+  }
+  #tipo-texto {
+font-size: 1.5rem;
+color: black;
+min-height: 1.5em; 
+}
+
+  .scroll-down {
+font-size: 40px;
+color: #fff;
+cursor: pointer;
+position: absolute;
+left: 50%;
+transform: translateX(-50%);
+bottom: 30px;
+animation: none; 
+}
+
+
+  .sobremim-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .sobremim {
+    background-color: rgb(54, 54, 54);
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    max-width: 95%;
+  }
+
+  .fotoeu {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 20px;
+    margin: 0 auto 20px;
+  }
+
+  .sobremim1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .textosobremim {
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+
+
+  .habilidades-section {
+    padding: 50px 20px;
+  }
+
+  .habilidades {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .linha {
+    border: none;
+    height: 3px;
+    background-color: rgb(0, 0, 0);
+    width: 80%;
+    margin: 30px auto;
+  }
+
+  .habilidades-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+  }
+
+  .habilidades-grid a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  .habilidades-grid img {
+    height: 150px;
+    width: auto;
+    transition: transform 0.3s ease;
+  }
+
+  .habilidades-grid img:hover {
+    transform: scale(1.1);
+  }
+
+ 
+  .redes-section {
+    background-color: rgb(54, 54, 54);
+    border-radius: 40px;
+padding: 6px 6px; 
+margin: 6px 6px;  
+  }
+
+  .titulominhasredes {
+    color: #4b82c3;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .redes-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gatocomflor {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+  }
+
+.redes-links {
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 40px;
+}
+
+ .rede-item {
+display: flex;
+flex-direction: column; 
+align-items: center;
+text-decoration: none;
+color: white;
+ transition: transform 0.7s ease; 
+}
+
+
+
+.rede-item img {
+width: 150px;
+height: 150px;
+}
+.rede-item img[alt="Gmail"] {
+width: 210px;
+height: 210px;
+}
+
+.rede-item img[alt="Instagram"] {
+width: 210px;
+height: 210px;
+}
+
+  .rede-item p {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+ 
+  #voltarTopo {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #747474;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s, transform 0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  }
+
+  #voltarTopo:hover {
+    transform: scale(1.15);
+  }
+
+  #voltarTopo.mostrar {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .dark-mode {
+    background-color: #121212;
+    color: #fff;
+  }
+
+  .dark-mode nav {
+    background-color: #1e1e1e;
+    border-bottom: 1px solid #333;
+  }
+
+  .dark-mode nav a {
+    color: #fff;
+  }
+
+  .dark-mode .sobremim {
+    background-color: #2a2a2a;
+  }
+
+  .dark-mode .hero-text p {
+    color: #fff;
+  }
+
+  .dark-mode .hero-text h1 {
+    color: #fff;
+  }
+
+  .dark-mode .sorriso {
+    display: none;
+  }
+
+  .dark-mode .linha {
+    background-color: white;
+  }
+
+  .dark-mode .titulominhasredes {
+    color: #fff;
+  }
+
+  
+  @media (min-width: 768px) {
+    .rede-item[href*="instagram"] {
+transform: translateX(27px); 
+}
+    nav {
+      padding: 35px 70px;
+      flex-wrap: nowrap;
+    }
+
+    nav a {
+      font-size: 26px;
+    }
+
+    .hero {
+      flex-direction: row;
+      text-align: left;
+      gap: 100px;
+    }
+
+    .hero img {
+      width: 400px;
+      margin-bottom: 0;
+    }
+
+    .hero-text h1 {
+      font-size: 3.5rem;
+    }
+
+    .sobremim {
+      flex-direction: row;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .fotoeu {
+      max-width: 400px;
+      margin: 0;
+    }
+
+    .sobremim1 {
+      text-align: left;
+      font-size: 2.5rem;
+    }
+
+    .habilidades-grid img {
+      height: 200px;
+    }
+
+    .redes-content {
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .redes-links {
+      flex-direction: column;
+    }
+
+    .rede-item {
+      flex-direction: row;
+      gap: 15px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .hero {
+      gap: 200px;
+    }
+
+    .hero img {
+      width: 500px;
+    }
+
+    .hero-text h1 {
+      font-size: 4rem;
+    }
+
+    .habilidades-grid img {
+      height: 250px;
+    }
+  }
+  .projetos-section {
+padding: 60px 20px;
+text-align: center;
+}
+
+.titulo-projetos {
+font-size: 40px;
+color: #fff;
+margin-bottom: 10px;
+}
+
+.projetos-grid {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 70px;
+padding-top: 7%; 
+}
+
+.projeto-item {
+background-color: rgb(54, 54, 54);
+border-radius: 20px;
+padding: 20px;
+width: 300px;
+height: 200px;
+display: flex;
+align-items: center;
+justify-content: center;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projeto-item img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+border-radius: 15px;
+}
+
+.projeto-item:hover {
+transform: scale(1.05);
+box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+
+.dark-mode .projeto-item {
+background-color: #2a2a2a;
+}
+@media (min-width: 768px) {
+.projetos-section {
+  padding: 80px 60px;
+}
+
+.titulo-projetos {
+  font-size: 3rem;
+}
+
+.projetos-grid {
+  gap: 50px;
+}
+
+.projeto-item {
+  width: 320px;
+  height: 220px;
+}
+}
+
+@media (min-width: 1024px) {
+.projetos-section {
+  padding: 100px 120px;
+}
+
+.titulo-projetos {
+  font-size: 3.2rem;
+}
+
+.projeto-item {
+  width: 350px;
+  height: 230px;
+}
+
+.projetos-grid {
+  gap: 60px;
+}
+}
+
+@media (min-width: 1400px) {
+.projetos-section {
+  padding: 120px 180px;
+}
+
+.titulo-projetos {
+  font-size: 3.5rem;
+}
+
+.projeto-item {
+  width: 380px;
+  height: 250px;
+}
+}
+@media (min-width: 1024px) {
+.titulo-projetos {
+  font-size: 3.8rem; 
+  margin-bottom: 50px; 
+}
+
+.projetos-grid {
+  gap: 120px; 
+}
+}
+.contato {
+text-align: center;
+margin-top: 100px;
+padding: 60px 20px;
+background-color: #525252;
+border-radius: 20px;
+box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+color: #333; 
+}
+
+.contato h2 {
+font-size: 2rem;
+margin-bottom: 10px;
+color: #ffffff; 
+}
+
+.contato p {
+color: #ffffff; 
+}
+
+.form-contato {
+display: flex;
+flex-direction: column;
+gap: 15px;
+max-width: 400px;
+margin: 0 auto;
+text-align: left;
+}
+
+.form-contato label {
+font-weight: bold;
+color: #ffffff; 
+}
+
+.form-contato input,
+.form-contato textarea {
+width: 100%;
+padding: 10px;
+border: 1px solid #474747;
+border-radius: 8px;
+font-size: 1rem;
+color: #000000;
+}
+
+.form-contato input::placeholder,
+.form-contato textarea::placeholder {
+color: #000000;
+}
+
+.form-contato button {
+background-color: #2b6cb0; 
+color: #ffffff;
+padding: 12px;
+border: none;
+border-radius: 8px;
+cursor: pointer;
+transition: 0.3s;
+font-weight: bold;
+}
+
+.modal {
+display: none; 
+position: fixed; 
+z-index: 1000; 
+left: 0;
+top: 0;
+width: 100%; 
+height: 100%; 
+background-color: rgba(0,0,0,0.6);
+justify-content: center;
+align-items: center;
+}
+
+.modal-content {
+background-color: #fff;
+color: #000;
+padding: 25px;
+border-radius: 12px;
+max-width: 400px;
+width: 90%;
+text-align: center;
+box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+animation: fadeIn 0.3s ease;
+}
+
+.close {
+position: absolute;
+top: 20px;
+right: 30px;
+color: #fff;
+font-size: 40px;
+cursor: pointer;
+}
+
+@keyframes fadeIn {
+from {opacity: 0; transform: scale(0.9);}
+to {opacity: 1; transform: scale(1);}
+}
+
+
+.dark-mode .modal-content {
+background-color: #2a2a2a;
+color: #fff;
+}
+.projetos-grid img[alt="Projeto HardPro"] {
+width: 200px !important;  
+height: auto !important;
+object-fit: contain;
+display: block;
+margin: 0 auto;
+}
+.projetos-grid img[alt="Projeto Morada Ideal"]{
+width: 300px !important; 
+height: auto !important;
+object-fit: contain;
+display: block;
+margin: 0 auto;
+}
+
+.form-contato button:hover {
+background-color: #1e4e8c;
+}
+
+
+footer {
+background-color: #5b5b5b;
+color: #6d6d6d;
+text-align: center;
+padding: 20px 10px;
+margin-top: 60px;
+border-radius: 15px 15px 0 0;
+}
+
+footer a {
+color: #1e90ff;
+text-decoration: none;
+}
+
+footer a:hover {
+text-decoration: underline;
+}
+.dark-mode #tipo-texto {
+color: #ffffff;
+}
+
+.hero {
+margin-bottom: 200px; 
+}
+
+
+.sobremim-container {
+margin-bottom: 200px;
+}
+
+
+.habilidades-section {
+margin-bottom: 300px;
+}
+
+
+.redes-section {
+margin-bottom: 200px;
+}
+
+
+.projetos-section {
+margin-bottom: 200px;
+}
+#btnTopo {
+display: none; 
+position: fixed;
+bottom: 30px;
+right: 30px;
+z-index: 99;
+background-color: #333;
+color: white;
+border: none;
+border-radius: 50%;
+width: 45px;
+height: 45px;
+font-size: 24px;
+cursor: pointer;
+box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#btnTopo:hover {
+background-color: #555;
+transform: scale(1.1);
+}
+.music-controls {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  #prev-track, #next-track {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #prev-track:hover, #next-track:hover {
+    color: #4b82c3;
+  }
+  #play-pause {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #play-pause:hover {
+    color: #4b82c3;
+  }
+  .fastsvg{
+    height: 40px;
+    width: 40px;
+  }
+ 
+
+#volume-control:hover {
+  transform: scale(1.1);
+}
+.music-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.music-btn:hover svg {
+  transform: scale(1.2);
+  filter: brightness(0.3);
+}
+body.dark-mode {
+  background-color: #121212 !important;
+  color: #f1f1f1 !important;
+}
+
+/* cabeçalho e navegação */
+body.dark-mode nav,
+body.dark-mode #cabeca {
+  background-color: #1e1e1e !important;
+}
+
+body.dark-mode nav a,
+body.dark-mode #cabeca a {
+  color: #ffffff !important;
+}
+
+/* textos e seções */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode p {
+  color: #f1f1f1 !important;
+}
+
+/* botões gerais */
+body.dark-mode button {
+  background-color: #333 !important;
+  color: #fff !important;
+  border: 1px solid #555 !important;
+}
+
+/* controles de música */
+body.dark-mode .music-btn svg {
+  fill: white !important;
+  stroke: white !important;
+}
+
+/* inputs e formulários */
+body.dark-mode input,
+body.dark-mode textarea {
+  background-color: #222 !important;
+  color: #f1f1f1 !important;
+  border-color: #444 !important;
+}
+
+/* modais */
+body.dark-mode .modal-content {
+  background-color: #1c1c1c !important;
+  color: #fff !important;
+}
+
+ .audio-hint {
+  position: fixed;
+  top: 95px;
+  left: 25px;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.45);
+  padding: 6px 12px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  backdrop-filter: blur(6px);
+  z-index: 1000;
+  transition: opacity 0.3s ease;
+}
+
+.audio-hint i {
+  font-size: 16px;
+}
+
+#audioHint button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#audioHint button:hover {
+  color: #ff4d4d;
+  transform: scale(1.2);
+}
+.footer{
+  margin-top: 50px;
+  height: 80px;
+  color: white;
+}
