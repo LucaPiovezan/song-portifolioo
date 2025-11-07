@@ -145,8 +145,11 @@ const musicTracks = [
     src: 'yabadubadu.mp3', 
     bgColor: '#c9bdc2d5', 
     image: 'yabadubadu.png' 
+  },
+   src: 'sparks.mp3', 
+    bgColor: '#000000', 
+    image: 'sparks.png' 
   }
-  
 ];
 
 let currentTrack = 0;
@@ -211,4 +214,5 @@ document.getElementById("closeHint").addEventListener("click", () => {
 
 
 digitar();
+
 animateArrow();
