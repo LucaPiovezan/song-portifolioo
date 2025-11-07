@@ -216,3 +216,4 @@ document.getElementById("closeHint").addEventListener("click", () => {
 digitar();
 
 animateArrow();
+
